@@ -1,0 +1,9 @@
+*.git
+.ssh/*
+!.ssh/.gitkeep
+.bash_history
+.bash_profile
+.bash_logout
+.bashrc
+.profile
+.cache
