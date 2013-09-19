@@ -54,5 +54,5 @@ repositories.
 
 ## More information ##
 
-[Generating SSH keys] (https://help.github.com/articles/generating-ssh-keys)
-[SSH key access with disabled password auth] (http://lani78.wordpress.com/2008/08/08/generate-a-ssh-key-and-disable-password-authentication-on-ubuntu-server/)
+- [Generating SSH keys] (https://help.github.com/articles/generating-ssh-keys)
+- [SSH key access with disabled password auth] (http://lani78.wordpress.com/2008/08/08/generate-a-ssh-key-and-disable-password-authentication-on-ubuntu-server/)
