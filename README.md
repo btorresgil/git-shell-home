@@ -26,29 +26,29 @@ These steps set up a  private git server on Ubuntu in the /home/git directory.
 You can change the /home/git directory to your prefered directory to store git
 repositories.
 
-Step 1:  Install git
+#### Step 1:  Install git ####
 
     sudo apt-get install git
 
-Step 2:  Create a `git` user and group on the server
+#### Step 2:  Create a `git` user and group on the server ####
 
     sudo adduser --no-create-home --shell /usr/bin/git-shell --disabled-password --home /home/git git
 
-Step 3:  Clone this repo to the home directory
+#### Step 3:  Clone this repo to the home directory
 
     sudo git clone https://github.com/dralth/git-shell-home /home/git
 
-Step 4:  Set the first admin's public key
+#### Step 4:  Set the first admin's public key ####
 
-- If the admin is your user on the same server:
+  If the admin is your user on the same server:
 
     sudo cp ~/.ssh/id_rsa.pub /home/git/.ssh/authorized_keys
 
--  For other public keys:
+  For other public keys:
 
-    sudo sh -c 'echo "YOUR_SSH_KEY" > /home/git/.ssh/authorized_keys
+    sudo sh -c 'echo "YOUR_SSH_KEY" > /home/git/.ssh/authorized_keys'
 
-Step 5:  Set the permissions on the home directory
+#### Step 5:  Set the permissions on the home directory ####
 
     sudo chown -R git:git /home/git
 
